@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input{
+            display: block;   /* 가로크기 한줄 차지*/
+            margin-bottom: 16px;
+        }
+        input[type="checkbox"],input[type="radio"]{
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <!-- input(입력태그) -->
+    <!-- input form으로(데이터 전송위해) 감싼다음 input을 사용한다 -->
+    <form>
+        <!-- input에는 type 이라는 속성이 존재 -->
+        <input type="text" placeholder="글자를 입력하세요">
+
+        <input type="number" placeholder="숫자를 입력하세요">
+        <!--체크박스는 중복체크 가능  -->
+        <label for="abc">참여</label>
+        <input type="checkbox" id="abc">
+        <label for="abcd">미참여</label>
+        <input type="checkbox" id="abcd">
+
+        <input type="email" placeholder="메일을 입력하세요">
+        <input type="password" placeholder="비밀번호를 입력하세요">
+
+        <!-- 라디오는 중복체크 불가능 -->
+        <label for="pw">참여</label>
+        <input type="radio" id="pw" name="pwe">
+        <label for="pwe">미참여</label>
+        <input type="radio" id="pwe" name="pwe">
+
+        <input type="date">
+        <input type="time">
+
+        <input type="color">
+
+        <input type="file">
+
+        <input type="search">
+
+        <!-- submit : input 들에 입력된 내용을  form에 제출 -->
+        <input type="submit">
+        <input type="reset">
+
+        <!-- select 선택 : 주어진 항목중에 선택 /
+        반드시 option 태그를 갖고있어야함-->
+        <select>
+        <option>1반</option>
+        <option>2반</option>
+        <option>3반</option>
+
+        </select>
+
+    </form>
+    
+</body>
+</html>
